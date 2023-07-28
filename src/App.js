@@ -7,6 +7,7 @@ import {
   Link,
 } from "react-router-dom";
 import Signup from "./components/Signup";
+import Home from "./components/Home";
 
 
 
@@ -17,7 +18,10 @@ function App() {
   const router = createBrowserRouter([
    
 
-      
+    {
+      path: '/',
+      element: <Home></Home>,
+    },  
     {
       path: '/login',
       element: <Login></Login>,
